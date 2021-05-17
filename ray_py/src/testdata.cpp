@@ -208,21 +208,22 @@ void dump_positions(std::shared_ptr<ArrayParticlePositionCoupler> particlePositi
            0, 
            MPI_COMM_WORLD);
     }
+    std::cout << ThisTask << " " << NTask << std::endl;
     if (ThisTask==0) {
-        for ( int ip=0 ; ip<particlePositionCoupler->allN() ; ip++ ) {
-            for ( int jj=0 ; jj<3 ; jj++ ) {
-                std::cout << allData[ip].Pos[jj] <<" ";
-            }
-            std::cout << allData[ip].OpticalDepth << std::endl << std::flush;
-//            std::cout << allData[ip].OpticalDepth << " " << allData[ip].proc << std::endl << std::flush;
-        }
+//        for ( int ip=0 ; ip<particlePositionCoupler->allN() ; ip++ ) {
+//            for ( int jj=0 ; jj<3 ; jj++ ) {
+//                std::cout << allData[ip].Pos[jj] <<" ";
+//            }
+//            std::cout << allData[ip].OpticalDepth << std::endl << std::flush;
+////            std::cout << allData[ip].OpticalDepth << " " << allData[ip].proc << std::endl << std::flush;
+//        }
     }
 }
 
 void run_test() {
-    int argc=0;
-    char **argv;
-    MPI_Init(&argc,&argv);
+//    int argc=0;
+//    char **argv;
+//    MPI_Init(&argc,&argv);
     
     std::shared_ptr<ArrayParticlePositionCoupler> p = generate_test_data();
     
