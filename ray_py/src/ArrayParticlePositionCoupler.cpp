@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-#include "coupling.h"
+//#include "coupling.h"
+#include "ArrayParticlePositionCoupler.h"
 
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include <iostream>
 #include <stdlib.h>     /* exit, EXIT_FAILURE */
-#include "testdata.h"
 
 double *ArrayParticlePositionCoupler::position(int i) {
     return this->testpositions[i].Pos;

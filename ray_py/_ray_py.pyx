@@ -7,10 +7,10 @@ from numpy cimport int64_t
 import numpy as np
 
 cdef extern from "src/testdata.h":
-    void test()
+    void run_test()
 
-def run_test():
-    test()
+def dump_test_data():
+    run_test()
 
 # def simplex_noise(seed,x0,x1,nx,y0,y1,ny):
 #     return np.array(simplex_noise_2d(seed,x0,x1,nx,y0,y1,ny))

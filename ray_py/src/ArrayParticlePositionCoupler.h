@@ -12,25 +12,12 @@
  */
 
 
-#ifndef COUPLING_H
-#define COUPLING_H
+#ifndef ARRAYCOUPLER_H
+#define ARRAYCOUPLER_H
 
 #include <vector>
-
-class ParticlePositionCoupler {
-public:
-    virtual double *position(int i) {};
-    virtual double mass(int i) {};
-    virtual double smoothing(int i) {};
-    virtual double opacity(int i) {};
-    virtual bool isDusty(int i) {};
-    virtual bool isGas(int i) {};
-    virtual bool isActive(int i) {};
-    virtual bool isAlive(int i) {};
-    virtual long long allN() {};
-    virtual long long localN() {};
-    virtual long long allGasN() {};
-};
+#include "rt_prototypes.h"
+#include "coupling.h"
 
 struct TestData {
     double Pos[3];
@@ -63,21 +50,5 @@ public:
     
 };
 
-//extern ArrayParticlePositionCoupler *particlePositionCoupler;
-
-double opticalDepthCutoff();
-
-double kernel_wk(double r,double h);
-
-double dtime_system(double t0, double t1);
-
-double system_time(void);
-
-//    void endrun(int code) {
-//        
-////        std::cout << "dying, error " << code << std::endl;
-////        exit(0); // do MPI finalize first?
-//    }
-
-#endif /* COUPLING_H */
+#endif /* ARRAYCOUPLER_H */
 
