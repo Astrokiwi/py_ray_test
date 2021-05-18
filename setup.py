@@ -23,7 +23,9 @@ ext_modules=cythonize(
                               #    "ray_py/src/agn_kernel.cpp",
                                  "ray_py/src/ArrayParticlePositionCoupler.cpp",
                                  # "ray_py/src/raytracing.cpp",
+                                 "ray_py/src/runfrompy.cpp",
                                  "ray_py/src/testdata.cpp",
+                                 "ray_py/src/mpi_tools.cpp",
                                  "ray_py/_ray_py.pyx"],
                              language="c++",  # generate C++ code
                              compiler_directives={'language_level' : 3},

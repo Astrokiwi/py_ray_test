@@ -19,7 +19,7 @@
 #include "rt_prototypes.h"
 #include "coupling.h"
 
-struct TestData {
+struct Particle {
     double Pos[3];
     double OpticalDepth;
     double smoothing;
@@ -30,7 +30,7 @@ struct TestData {
 
 class ArrayParticlePositionCoupler: public ParticlePositionCoupler {
 public:
-    std::vector<struct TestData> testpositions;
+    std::vector<struct Particle> particles;
 
     int Nlocal,Ntot;
     

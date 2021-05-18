@@ -12,7 +12,7 @@
 #include <stdlib.h>     /* exit, EXIT_FAILURE */
 
 double *ArrayParticlePositionCoupler::position(int i) {
-    return this->testpositions[i].Pos;
+    return this->particles[i].Pos;
 }
 
 double ArrayParticlePositionCoupler::mass(int i) {
@@ -20,11 +20,11 @@ double ArrayParticlePositionCoupler::mass(int i) {
 }
 
 double ArrayParticlePositionCoupler::smoothing(int i) {
-    return this->testpositions[i].smoothing;
+    return this->particles[i].smoothing;
 }
 
 double ArrayParticlePositionCoupler::opacity(int i) {
-    return this->testpositions[i].opacity;
+    return this->particles[i].opacity;
 }
 
 bool ArrayParticlePositionCoupler::isDusty(int i) {

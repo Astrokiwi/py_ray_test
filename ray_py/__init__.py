@@ -1,1 +1,1 @@
-from ._ray_py import dump_test_data
+from ._ray_py import dump_test_data,calc_test_depths,calc_depths

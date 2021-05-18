@@ -27,7 +27,11 @@
 //extern int Nlocal,Ntot;
 
 std::shared_ptr<ArrayParticlePositionCoupler> generate_test_data();
+//std::shared_ptr<std::vector<Particle>> gather_data(std::shared_ptr<ArrayParticlePositionCoupler> particlePositionCoupler);
 void dump_positions(std::shared_ptr<ArrayParticlePositionCoupler> particlePositionCoupler);
+
+//std::vector<double> gather_tau(double *thistau,int localN,int allN);
+std::vector<double> test_depths();
 
 void run_test();
 
