@@ -1,6 +1,6 @@
-import sys
-sys.path.append("../")
-import ray_py
+# import sys
+# sys.path.append("../")
+import ray_py # do pip install [-e] first
 from mpi4py import MPI
 import numpy as np
 
