@@ -34,7 +34,7 @@ public:
 
     int Nlocal,Ntot;
     
-    double constant_mass = 1.;
+    double constant_mass = 1.e-14; // in 1e10 Msun units
 
     double *position(int i) override;
     double mass(int i) override;

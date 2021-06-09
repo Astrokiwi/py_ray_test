@@ -58,8 +58,10 @@ long long ArrayParticlePositionCoupler::allGasN() {
 
 
 double opticalDepthCutoff() {
-    return 7e6;
+//    return 7e6;
+    return 10.; // hard-coded for now :(
 }
+
 double kernel_wk(double r,double h) {
     if ( r>=h ) return 0.;
 
